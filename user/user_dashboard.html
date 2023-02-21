@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../user/asstes/images/favi.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../user/asstes/css/User-dashboard.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 sideNav">
+                <div class="position-sticky top-0">
+                    <div class="d-flex align-items-center">
+                        <img class="logo-img" src="../user/asstes/images/GenAi-logo.png">
+                        <h5 class="logo-name">Gen AI</h5>
+                    </div>
+                    <ul class="list-unstyled sideNav-list">
+                        <li class="sideNav-list-items"><img class="sidnav-icons" src="../user/asstes/images/Icon.png"><span class="sideNav-list-items-text">DashBoard</span></li>
+                        <li class="sideNav-list-items"><img class="sidnav-icons" src="../user/asstes/images/Icon (1).png"><span class="sideNav-list-items-text">Questionnare</span></li>
+                        <li class="sideNav-list-items"><img class="sidnav-icons" src="../user/asstes/images/Icon (2).png"><span class="sideNav-list-items-text">Template</span></li>
+                        <li class="sideNav-list-items"><img class="sidnav-icons" src="../user/asstes/images/Icon (3).png"><span class="sideNav-list-items-text">Pricing</span></li>
+                    </ul>
+                    <ul class="list-unstyled sideNav-list-bottom ">
+    
+                        <li class="sideNav-list-Bottomitems"><img class="sidnav-icons" src="../user/asstes/images/Icon (4).png"><span>Support</span></li>
+                        <li class="sideNav-list-Bottomitems"><img class="sidnav-icons" src="../user/asstes/images/Icon (5).png"><span>LogOut</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 main-content">
+                <div class="topbar mb-4">
+                    <div class="row">
+                        <div class="col-sm-9 border-right">
+                            <div class="d-flex justify-content-between">
+                                <div id="mySidebar" class="sidebar">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Contact</a>
+                                  </div>
+                                  
+                                  <div id="main">
+                                    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+                                  </div>
+                                <h4 class="page-heading">Dashboard</h4>
+                                <button type="button" class="btn btn-primary upgradeBtn"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span>Upgrade Plan</span></button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="dropdown">
+                                <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="user-imaage" src="./asstes/images/download.jfif">
+                                    <span>Babar ali</span>
+                                </div>    
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Account</a></li>
+                                  <li><a class="dropdown-item" href="#">LogOut</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100 mb-4 mainCard">
+                   <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <div>
+                                    <h6 class="card-title">Welcome Back!</h6>
+                                    <h2 class="user-name">Babar Ali</h2>
+                                    <p class="card-text">
+                                        Don't let writing letters hold you back. Our AI technology is here to help. Get started today and write better letters in minutes.
+                                    </p>
+                                    <a href="#" class="btn btn-primary letter-btn"><img class="edit-icon" src="./asstes/images/Edit-Square.png" ><span>Write Letter</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-end">
+                            <img class="robo1" src="./asstes/images/robo1.png">
+                        </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card secondCard">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Subscription Usage</h6>
+                                        <h2 class="plan-name">Plan Pro</h2>
+                                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                                        <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h1 class="plan-remain">10</h1>
+                                                <p class="plan-remain-text">Numbers of refresh</p>
+                                            </div>
+                                            <div>
+                                                <h1 class="plan-remain">10</h1>
+                                                <p class="plan-remain-text">Numbers of refresh</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="plan-remain">01/01/23</h1>
+                                        <p class="plan-remain-text">Expiry</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 robo2-card">
+                                    <img class="robo2" src="./asstes/images/robo2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card thirdCard">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Buy Subscription</h6>
+                                        <h1 class="wantPro-heading">Want to go pro?</h1>
+                                        <ul class="list-style-type">
+                                            <li class="p-1">Unlimited refreshs</li>
+                                            <li class="p-1">Unlimited Projects</li>
+                                            <li class="p-1">Active custom support</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary goPro-btn">Go Pro!</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 robo3-card px-0">
+                                    <img class="robo3" src="./asstes/images/robo3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</html>
