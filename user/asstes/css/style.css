@@ -2,7 +2,7 @@ body{
     font-family: 'Jost', sans-serif;
 }
 .logo-img{
-    margin-left: -41px;
+    width: 80px;
 }
 .logo-name{
     margin-left: -34px;
@@ -57,7 +57,7 @@ body{
 }
 .main-content{
     padding-left: 45px;
-    padding-bottom: 30px;
+    /* padding-bottom: 15px; */
     background-image: linear-gradient(to right, rgb(255 248 255), rgb(249, 234, 218));
 }
 .topbar{
@@ -140,8 +140,23 @@ body{
 
 }
 .upgradeBtn:active{
-  background: linear-gradient(95.77deg, #EDB900 0.83%, #ED5500 100%);
+  background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
     border-color:#E7DB6F !important;
+
+}
+.upgradepre{
+ background: transparent;
+ border: none;
+
+}
+.upgradepre:hover{
+  background: transparent;
+  border: none;
+
+}
+.upgradepre:active{
+  background: transparent;
+  border: none !important;
 
 }
 .upgrade-icon{
@@ -178,11 +193,17 @@ body{
     margin-bottom: 15px;
     min-height: 298px;
 }
+.secondCard .card-body{
+  padding-bottom: 15px;
+}
+.thirdCard .card-body{
+  padding-bottom: 15px;
+}
 .thirdCard{
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid #D9D9D9;
     border-radius: 20px;
-    min-height: 298px;
+    min-height: 340px;
 }
 .plan-name{
   background: linear-gradient(267.86deg, #B4885A -9.87%, #E7DB6F 40.68%, #B4885A 89.15%);
@@ -230,6 +251,7 @@ text-fill-color: transparent;
     
   }
   .sideNav{
+    z-index: 99;
     background-color: #FFFFFF;
     box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.1);
 }
@@ -451,8 +473,9 @@ text-fill-color: transparent;
     background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
       border: none;
       border-radius: 99px;
-      padding: 6px 45px;
+      padding: 8px 45px;
       color: white;
+      text-decoration: none;
   }
   .refreshBtn:hover{
     background-color: #DA9D46;
@@ -608,21 +631,21 @@ text-fill-color: transparent;
     border-radius: 10px;
   }
   .nav-pills .monthlyBtn{
-    padding: 10px 35px;
+    padding: 10px 25px;
     color: #555555;
   }
   .nav-pills .anualyBtn{
-    padding: 10px 35px;
+    padding: 10px 25px;
     color: #555555;
   }
   .nav-pills .monthlyBtn.active{
-    padding: 10px 35px;
+    padding: 10px 25px;
     border-radius: 10px;
     font-weight: 600;
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
   }
   .nav-pills .anualyBtn.active{
-    padding: 10px 35px;
+    padding: 10px 25px;
     border-radius: 10px;
     font-weight: 600;
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
@@ -786,7 +809,94 @@ div#example_length label select{
   padding: 6px 45px;
   color: white;
 }
+.vh-50{
+  height: 37vh;
+}
+#blur {
+  color: transparent;
+  text-shadow: 0 0 8px #000;
+  line-height: 1.8;
+}
+.noBlur{
+  line-height: 1.8;
+}
+.footer {
+  position: sticky;
+  /* left: 0; */
+  /* top: 50%; */
+  bottom: 0px;
+  width: 100%;
+  background: linear-gradient(269.5deg, #B4885A 8.4%, #E7DB6F 50.14%, #B4885A 86.22%);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  height: 62px;
+  /* right: 0; */
+}
+.templateCard{
+  border-radius: 20px;
+}
 
+.custom-search {
+  position: relative;
+  width: 300px;
+}
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-search-botton {
+  position: absolute;
+  right: 3px; 
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: linear-gradient(269.5deg, #B4885A 8.4%, #E7DB6F 50.14%, #B4885A 86.22%);
+  color: #141414;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.footer-txt{
+  color: #141414;
+}
+.btnWraper{
+  position: absolute;
+top: 50%;
+left: 30%;
+display: flex;
+}
+.downloadPdf{
+  background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
+  border: none;
+  border-radius: 15px;
+  padding: 20px 45px;
+  /* width: 100%; */
+  margin-right: 50px;
+  color: #141414;
+}
+.downloadworld{
+  background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
+  border: none;
+  border-radius: 15px;
+  padding: 20px 45px;
+  /* width: 100%; */
+  margin-left: 50px;
+  color: #141414;
+}
+.pdfImg{
+  margin-right: 10px;
+}
+.wordImg{
+  margin-right: 10px;
+}
 @media screen and (min-width:1445px) {
     .main-content{
         height: 100vh;
@@ -799,7 +909,7 @@ div#example_length label select{
     }
     .main-content{
         padding-left: 12px;
-        padding-bottom: 320px;
+        /* padding-bottom: 320px; */
     }
     .sideNav{
         background-color: transparent;
@@ -825,6 +935,20 @@ div#example_length label select{
 @media screen and (max-width:575px) {
     .userNav-dropdown{
         display: none !important;
+      }
+      .btnWraper{
+        position: absolute;
+    top: 35%;
+    left: 15%;
+    display: flex;
+      }
+      .downloadPdf{
+        margin-right: 0;
+        padding: 10px;
+      }
+      .downloadworld{
+        margin-left: 10px;
+        padding: 10px;
       }
 }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../user/asstes/css/style.css">
-<link rel="stylesheet" href="../user/asstes/css/progressbar.css">
-    <title>DashBoard</title>
+<link rel="stylesheet" href="../user/asstes/css/progressBar.css">
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -19,14 +19,14 @@
             <div class="col-lg-3 sideNav " id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
-                    <div class="d-flex align-items-center">
-                        <img class="logo-img" src="../user/asstes/images/GenAi-logo.png">
-                        <h5 class="logo-name">Gen AI</h5>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img class="logo-img" src="../user/asstes/images/Genlogo.jpg">
+                        
                     </div>
                     <ul class="list-unstyled sideNav-list">
                         <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/Dashboard-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/Dashboard-black.png');"></span>
-                          <a href="./user_dashboard.html" class="sideNav-list-items-text">DashBoard</a>
+                          <a href="./user_dashboard.html" class="sideNav-list-items-text">Dashboard</a>
                         </li>
                         <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/questionnare-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/questionnare-black.png');"></span>
@@ -41,16 +41,18 @@
                           <a href="./pricing.html" class="sideNav-list-items-text">Pricing</a>
                         </li>
                       </ul>  
-                      <ul class="list-unstyled sideNav-list-bottom ">
-                        <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
-                        <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
-                        <a href="#" class="sideNav-list-items-text">Support</a>
-                        </li>
-                        <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/loogout-gold.png">
-                        <span class="sidnav-icons" style="background-image: url('../user/asstes/images/logout-black.png');"></span>
-                        <a href="#" class="sideNav-list-items-text">Logout</a>
-                        </li>
-                    </ul>
+                      <div class="d-flex justify-content-center align-items-center vh-50">
+                        <ul class="list-unstyled sideNav-list-bottom w-100">
+                            <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
+                            <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
+                            <a href="#" class="sideNav-list-items-text">Support</a>
+                            </li>
+                            <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/loogout-gold.png">
+                            <span class="sidnav-icons" style="background-image: url('../user/asstes/images/logout-black.png');"></span>
+                            <a href="#" class="sideNav-list-items-text">Logout</a>
+                            </li>
+                        </ul>
+                      </div>
                 </div>
             </div>
             <div class="col-lg-9 main-content">
@@ -79,7 +81,7 @@
                                 </div>    
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                   <li><a class="dropdown-item" href="#">Account</a></li>
-                                  <li><a class="dropdown-item" href="#">LogOut</a></li>
+                                  <!-- <li><a class="dropdown-item" href="#">LogOut</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -116,12 +118,42 @@
                                         <!-- <a href="#" class="btn btn-primary">Button</a> -->
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h1 class="plan-remain">10</h1>                                           
-                                                <p class="plan-remain-text">Numbers of refresh</p>
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="outer"></div>
+                                                    <div class="numb">
+                                                       10
+                                                    </div>
+                                                    <div class="circle">
+                                                       
+                                                       <div class="bar left">
+                                                          <div class="progress"></div>
+                                                       </div>
+                                                       <div class="bar right">
+                                                          <div class="progress"></div>
+                                                       </div>
+                                                    </div>
+                                                 </div>                                          
+                                                <p class="plan-remain-text">Numbers of refreshes</p>
                                             </div>
                                             <div>
-                                                <h1 class="plan-remain">10</h1>
-                                                <p class="plan-remain-text">Numbers of refresh</p>
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="outer"></div>
+                                                    <div class="numb">
+                                                       10
+                                                    </div>
+                                                    <div class="circle">
+                                                       
+                                                       <div class="bar left">
+                                                          <div class="progress"></div>
+                                                       </div>
+                                                       <div class="bar right">
+                                                          <div class="progress"></div>
+                                                       </div>
+                                                    </div>
+                                                 </div>     
+                                                <p class="plan-remain-text">Numbers of forms</p>
                                             </div>
                                         </div>
                                         <h1 class="plan-remain">01/01/23</h1>
@@ -213,7 +245,16 @@ liElements.forEach(li => {
 
 
 //Progress Bar
-
+// const numb = document.querySelector(".numb");
+//             let counter = 10;
+//             setInterval(()=>{
+//               if(counter == 100){
+//                 clearInterval();
+//               }else{
+//                 counter+=1;
+//                 numb.textContent = counter ;
+//               }
+//             }, 80);
 
     </script>
 </html>
