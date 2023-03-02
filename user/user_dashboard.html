@@ -19,7 +19,7 @@
             <div class="col-lg-3 sideNav " id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex  align-items-center logo" id="logo">
                         <img class="logo-img" src="../user/asstes/images/Genlogo.jpg">
                         
                     </div>
@@ -41,8 +41,8 @@
                           <a href="./pricing.html" class="sideNav-list-items-text">Pricing</a>
                         </li>
                       </ul>  
-                      <div class="d-flex justify-content-center align-items-center vh-50">
-                        <ul class="list-unstyled sideNav-list-bottom w-100">
+                      <div class="d-flex justify-content-center align-items-end vh-50">
+                        <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
                             <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
                             <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
                             <a href="#" class="sideNav-list-items-text">Support</a>
@@ -174,7 +174,7 @@
                                         <h6 class="card-title">Buy Subscription</h6>
                                         <h1 class="wantPro-heading">Want to go pro?</h1>
                                         <ul class="list-style-type">
-                                            <li class="p-1">Unlimited refreshs</li>
+                                            <li class="p-1">Unlimited refreshes</li>
                                             <li class="p-1">Unlimited Projects</li>
                                             <li class="p-1">Active custom support</li>
                                         </ul>
@@ -198,6 +198,8 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("logo").style.justifyContent = "center";
+
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
     }
@@ -205,7 +207,7 @@
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
-      
+      document.getElementById("logo").style.justifyContent = "start";
       document.getElementById("main").style.marginLeft= "0";
     }
 
