@@ -10,8 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../user/asstes/css/style.css">
-<link rel="stylesheet" href="../user/asstes/css/profile.css">
-    <title>Profile</title>
+    <title>Checkout</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -57,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 main-content pb-2 vh-100">
+            <div class="col-lg-9 main-content pb-2">
                 <div class="topbar mb-4">
                     <div class="row">
                         <div class="col-sm-9 border-right">
@@ -68,7 +67,7 @@
                                     <button class="openbtn" onclick="openNav()">☰ </button>  
                                   </div>
                                 <div class="col-sm-5">
-                                    <h4 class="page-heading mb-0 text-dark">Account</h4>
+                                    <h4 class="page-heading">Biling Detail</h4>
                                 </div>
                                 <div class="col-sm-3">
                                     <button type="button" class="btn btn-primary upgradeBtn"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
@@ -78,8 +77,8 @@
                         <div class="col-sm-3 d-flex align-items-center userNav-dropdown">
                             <div class="dropdown">
                                 <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
-                                    <span>Saylor Stark</span>
+                                  <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                                  <span>Saylor Stark</span>
                                 </div>    
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                   <li><a class="dropdown-item" href="./profile.html">Account</a></li>
@@ -90,110 +89,103 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mainProfile-conten">
-                        <!-- Page content -->
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
-                              <div class="card card-profile shadow">
-                                <div class="row justify-content-center">
-                                  <div class="col-lg-3 order-lg-2">
-                                    <div class="card-profile-image">
-                                      <a href="#">
-                                        <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                                  <!-- <div class="d-flex justify-content-between">
-                                    <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
-                                    <a href="#" class="btn btn-sm btn-default float-right">Message</a>
-                                  </div> -->
-                                </div>
-                                <div class="card-body pt-0 pt-md-4">
-                                  <div class="row">
-                                    <div class="col">
-                                      <div class="card-profile-stats d-flex justify-content-center mt-md-5">
-                                        <div>
-                                          <span class="heading text-dark">22</span>
-                                          <span class="description text-dark">Refreshes</span>
-                                        </div>
-                                        <div>
-                                          <span class="heading text-dark">10</span>
-                                          <span class="description text-dark">Forms</span>
-                                        </div>
-                                        <div>
-                                          <span class="heading text-dark">Basic</span>
-                                          <span class="description text-dark">Plan</span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="text-center">
-                                    <h5 class="text-dark">
-                                        Saylor Stark
-                                    </h5>
-                                    <p class="desg text-dark">Software Engineer</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 order-xl-1">
-                              <div class="card bg-secondary shadow">
-                                <div class="card-header bg-white border-0">
-                                  <div class="row align-items-center">
-                                    <div class="col-8">
-                                      <h3 class="mb-0 text-dark">My account</h3>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                      <a href="#!" class="btn btn-sm btn-primary editBtn">Edit</a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-body">
+                    <div class="col-lg-12 mb-3 mb-sm-0">
+                        <div class="card border-radius">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-lg-6 col-sm-12">
                                   <form>
-                                    <h6 class="heading-small text-muted mb-4">User information</h6>
-                                    <div class="pl-lg-4">
-                                      <div class="row">
-                                        <div class="col-lg-6">
-                                          <div class="form-group focused">
-                                            <label class="form-control-label text-dark" for="input-username">Full Name</label>
-                                            <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Saylor Stark">
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <div class="form-group">
-                                            <label class="form-control-label text-dark" for="input-email">Email address</label>
-                                            <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="SaylorStark@example.com">
-                                          </div>
-                                        </div>
+                                    <div class="row">
+                                      <div class="mb-3 col-sm-6">
+                                        <label for="inputEmail4">First Name</label>
+                                        <input class="form-control" id="inputEmail4" type="email">
                                       </div>
-                                      <div class="row">
-                                        <div class="col-lg-6">
-                                          <div class="form-group focused">
-                                            <label class="form-control-label text-dark" for="input-first-name">Desigenation</label>
-                                            <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Softwrae Engineer" value="">
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                          <div class="form-group focused">
-                                            <label class="form-control-label text-dark" for="input-last-name">Country</label>
-                                            <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="England" value="">
-                                          </div>
-                                        </div>
+                                      <div class="mb-3 col-sm-6">
+                                        <label for="inputPassword4">Last Name</label>
+                                        <input class="form-control" id="inputPassword4" type="password">
                                       </div>
                                     </div>
-                                   
-                                
+                                    <div class="row">
+                                      <div class="mb-3 col-sm-6">
+                                        <label for="phonenumber">Phone</label>
+                                        <input class="form-control" id="phonenumber" type="tel">
+                                      </div>
+                                      <div class="mb-3 col-sm-6">
+                                        <label for="inputPassword7">Email Address</label>
+                                        <input class="form-control" id="inputPassword7" type="email">
+                                      </div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="inputState">Country</label>
+                                      <select class="form-control" id="inputState">
+                                        <option selected="">Choose...</option>
+                                        <option>Enland</option>
+                                        <option>India</option>
+                                        <option>Pakistan</option>
+                                        <option>UAE</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="inputAddress5">Address</label>
+                                      <input class="form-control" id="inputAddress5" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="inputCity">Town/City</label>
+                                      <input class="form-control" id="inputCity" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="inputAddress2">State/Country</label>
+                                      <input class="form-control" id="inputAddress2" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="inputAddress6">Postal Code</label>
+                                      <input class="form-control" id="inputAddress6" type="number">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input class="form-check-input" id="gridCheck" type="checkbox">
+                                        <label class="form-check-label" for="gridCheck">Check me out</label>
+                                      </div>
+                                    </div>
                                   </form>
                                 </div>
+                                <div class="col-lg-6 col-sm-12">
+                                  <div class="checkout-details">
+                                    <div class="order-box">
+                                      <div class="title-box">
+                                        <div class="checkbox-title">
+                                          <h4 class="mb-0">Product </h4><span>Total</span>
+                                        </div>
+                                      </div>
+                                      <ul class="list-unstyled qty">
+                                        <li>Basic × 1 <span>$25.10</span></li>
+                                        
+                                      </ul>
+                                     
+                                      <div class="animate-chk">
+                                        <div class="row">
+                                          <div class="col">
+                                            <!-- <label class="d-block" for="edo-ani">
+                                              <input class="radio_animated" id="edo-ani" type="radio" name="rdo-ani" checked="" data-original-title="" title="">Check Payments
+                                            </label>
+                                            <label class="d-block" for="edo-ani1">
+                                              <input class="radio_animated" id="edo-ani1" type="radio" name="rdo-ani" data-original-title="" title="">Cash On Delivery
+                                            </label> -->
+                                            <label class="d-block mb-3" for="edo-ani2">
+                                              <input class="radio_animated" id="edo-ani2" type="radio" name="rdo-ani" checked="" data-original-title="" title="">Stripe<img class="img-paypal" src="./asstes/images/paypal.png" alt="">
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="order-place"><a  class="btn upgradeBtn text-light" href="./paymentDetails.html">Place Order  </a></div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>

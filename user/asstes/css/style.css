@@ -362,7 +362,7 @@ text-fill-color: transparent;
   
   input,
   textarea {
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     margin-bottom: 20px;
     border: none;
@@ -905,6 +905,41 @@ display: flex;
 }
 .logo{
   justify-content: center;
+}
+a.page-link{
+  background-color: transparent !important;
+}
+.active>.page-link, .page-link.active{
+  background-color: #474747 !important;
+  border-color: #474747 !important;
+}
+.checkout-details {
+  border: 1px solid #eee;
+  padding: 40px;
+}
+.checkbox-title{
+display: flex;
+justify-content: space-between;
+}
+.order-box .title-box {
+  padding-bottom: 20px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+}
+.order-box .qty {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.order-box .qty li{
+display: flex;
+justify-content: space-between;
+}
+.border-radius{
+  border-radius: 20px;
 }
 @media screen and (min-width:1445px) {
     .main-content{

@@ -1940,3 +1940,11 @@
   .desg{
     font-size: 13px;
   }
+  .editBtn{
+    background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
+    padding: 5px 30px;
+    border-radius: 99px;
+    border: none;
+    font-size: 16px;
+
+  }
