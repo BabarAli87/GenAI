@@ -61,7 +61,7 @@ text-fill-color: transparent;
 }
 .socialLinks{
     margin-bottom: 0;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 10px;
 }
 .socialLinks li{
