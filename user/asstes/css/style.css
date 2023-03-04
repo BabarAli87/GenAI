@@ -117,6 +117,8 @@ body{
 .goPro-btn:hover{
   background-color: #DA9D46;
   border-color: #E7DB6F;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 .goPro-btn:active{
   background-color: #DA9D46 !important;
@@ -137,7 +139,8 @@ body{
   background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
   /* background: linear-gradient(95.77deg, #EDB900 0.83%, #ED5500 100%); */
     border-color:#E7DB6F ;
-
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 .upgradeBtn:active{
   background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
@@ -463,12 +466,20 @@ text-fill-color: transparent;
     padding: 6px 45px;
     color: white;
   }
+  .next-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
   .prev-btn{
     background-color: #393939;
     border-color: #393939;
     border-radius: 99px;
     padding: 6px 45px;
     color: white;
+  }
+  .prev-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   }
   .refreshBtn{
     background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
@@ -478,6 +489,7 @@ text-fill-color: transparent;
       color: white;
       margin-bottom: -47px;
   }
+  
   .submit-btn{
     background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
       border: none;
@@ -486,8 +498,14 @@ text-fill-color: transparent;
       color: white;
       text-decoration: none;
   }
+  .submit-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
   .refreshBtn:hover{
     background-color: #DA9D46;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   
   }
   .refreshBtn:active{
@@ -669,6 +687,8 @@ text-fill-color: transparent;
   .buy-btn:hover{
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
     border: none;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   }
   .buy-btn:focus{
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
@@ -979,6 +999,9 @@ justify-content: space-between;
 .closebtn {
     display: block;
   }
+  .logo-img{
+    margin-left: 10px;
+}
 }
 @media screen and (max-width:842px){
   .refreshBtn{

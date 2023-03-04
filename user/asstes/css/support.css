@@ -39,10 +39,10 @@
     margin:0 auto;
 }
  
-.inside-contact h2{
-    text-transform:uppercase;
+.inside-contact h4{
+    text-transform:capitalize;
     text-align:center;
-    margin-top:50px;
+    margin-top:30px;
 }
  
 .inside-contact h3{
