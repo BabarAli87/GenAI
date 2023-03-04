@@ -18,8 +18,9 @@
             <div class="col-lg-3 sideNav " id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="logo-img" src="../user/asstes/images/Genlogo-removebg-preview.png">
+                    <div class="d-flex align-items-center logo" id="logo">
+                      <a href="./user_dashboard.html"><img class="logo-img" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
+
                         
                     </div>
                     <ul class="list-unstyled sideNav-list">
@@ -250,6 +251,8 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("logo").style.justifyContent = "center";
+
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
     }
@@ -257,6 +260,7 @@
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
+      document.getElementById("logo").style.justifyContent = "start";
       
       document.getElementById("main").style.marginLeft= "0";
     }

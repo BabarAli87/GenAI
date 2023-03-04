@@ -4,6 +4,9 @@ body{
 .logo-img{
     width: 80px;
 }
+.logo-imgQuestino{
+    width: 80px;
+}
 .logo-name{
     margin-left: -34px;
     font-size: 2rem;
@@ -911,6 +914,11 @@ display: flex;
   margin-right: 50px;
   color: #141414;
 }
+.downloadPdf:hover,
+.downloadworld:hover{
+  transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
 .downloadworld{
   background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
   border: none;
@@ -964,6 +972,7 @@ justify-content: space-between;
 .border-radius{
   border-radius: 20px;
 }
+
 @media screen and (min-width:1445px) {
     .main-content{
         height: 100vh;
@@ -1001,6 +1010,12 @@ justify-content: space-between;
   }
   .logo-img{
     margin-left: 10px;
+}
+  .logo-imgQuestino{
+    margin-left: 10px;
+}
+.visaCardImg{
+  margin-top: 20px;
 }
 }
 @media screen and (max-width:842px){

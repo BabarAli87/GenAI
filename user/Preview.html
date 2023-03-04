@@ -18,8 +18,9 @@
             <div class="col-lg-3 sideNav " id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img class="logo-img" src="../user/asstes/images/Genlogo.jpg">
+                  <div class="d-flex logo align-items-center" id="logo">
+                    <a href="./user_dashboard.html"><img class="logo-img" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
+
                     
                 </div>
                     <ul class="list-unstyled sideNav-list">
@@ -88,6 +89,9 @@
                         </div>
                     </div>
                 </div> -->
+                <div class="" id="main">
+                  <button class="openbtn" onclick="openNav()">☰ </button>  
+                </div>
                 <div class="row">
                     <div class="col-lg-12 mt-3">
                         <div class="card templateCard">
@@ -149,13 +153,17 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("logo").style.justifyContent = "center";
+
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
+
     }
     
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
+      document.getElementById("logo").style.justifyContent = "start";
       
       document.getElementById("main").style.marginLeft= "0";
     }
