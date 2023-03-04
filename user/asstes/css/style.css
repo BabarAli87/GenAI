@@ -373,6 +373,9 @@ text-fill-color: transparent;
   textarea:focus-visible {
     outline: none;
   }
+  .step textarea{
+    width: 100%;
+  }
   
   /* Slide out left animation */
   .slide-out-left {
