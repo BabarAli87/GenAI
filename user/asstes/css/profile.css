@@ -37,10 +37,10 @@
     -webkit-text-decoration-skip: objects;
   }
   
-  a:hover {
+  /* a:hover {
     text-decoration: none;
     color: #233dd2;
-  }
+  } */
   
   a:not([href]):not([tabindex]) {
     text-decoration: none;

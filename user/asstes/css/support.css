@@ -58,21 +58,25 @@
     margin-bottom:15px;
 }
 .inside-contact input[type=submit]{
-    background-color: #474747;
+   background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
     color:#fff;
     transition:0.2s;
     border:none;
     margin:10px 0;
+    border-radius: 99px;
 }
 .inside-contact input[type=submit]:hover{
-    background-color:#474747;
+    background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
     color:#fff;
     transition:0.2s;
+    border-radius: 99px;
+
 }
 .main{
     background-image: linear-gradient(to right, rgb(255 248 255), rgb(249, 234, 218));
 
 }
+
 @media screen and (max-width:991px){
     .contact-parent{
         display:block;
