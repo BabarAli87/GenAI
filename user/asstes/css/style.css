@@ -92,6 +92,10 @@ body{
     background: #474747;
     border-color: #474747;
 }
+.letter-btn:active{
+    background: #474747 !important;
+    border-color: #474747 !important;
+}
 .robo2{
     width: 140px;
 }
@@ -282,11 +286,11 @@ text-fill-color: transparent;
   }
   
   .openbtn {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
-    background-color:    #393939;
-    color: white;
-    padding: 10px 15px;
+    background-color: transparent;
+    color: #393939;
+    /* padding: 10px 15px; */
     border: none;
   }
   
@@ -935,6 +939,10 @@ display: flex;
   margin-right: 10px;
 }
 .logo{
+  display: -webkit-flex;
+  display: -webkit-box;   
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 a.page-link{

@@ -46,9 +46,21 @@ text-fill-color: transparent;
 .btn-theme {
     padding: 10px 40px;
     border-radius: 99px;
-    background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
-    border-color: #E7DB6F;
+    background: #393939;
+    border-color: #393939;
     color: white;
+    width: 100%;
+}
+.btn-theme:hover{
+    background: #393939;
+    border-color: #393939;
+    color: white;
+    transform: translateY(-1px);
+}
+.btn-theme:active{
+    background: #393939 !important;
+    border-color: #393939 !important;
+    color: white !important;
 }
 #signUpWraper{
     display: none;
@@ -61,10 +73,10 @@ text-fill-color: transparent;
 }
 .socialLinks{
     margin-bottom: 0;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 10px;
 }
-.socialLinks li{
+/* .socialLinks li{
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
     width: 40px;
     height: 40px;
@@ -72,7 +84,17 @@ text-fill-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .socialLinks li a i{
-   font-size: 20px;
+   font-size: 30px;
+}
+.twiter{
+    color: #1D9BF0;
+}
+.linkedIn{
+    color: #0a66c2;
+}
+.google-img{
+    width: 30px;
+    height: 30px;
 }
