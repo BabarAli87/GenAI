@@ -480,8 +480,8 @@ text-fill-color: transparent;
     border-radius: 20px;
   }
   .next-btn{
-    background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
-    border: none;
+    background-color: #393939;
+    border-color: #393939;
     border-radius: 99px;
     padding: 6px 45px;
     color: white;
@@ -502,8 +502,8 @@ text-fill-color: transparent;
     box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   }
   .refreshBtn{
-    background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
-      border: none;
+    background-color: #393939;
+    border-color: #393939;
       border-radius: 99px;
       padding: 6px 45px;
       color: white;
