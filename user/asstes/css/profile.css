@@ -952,9 +952,9 @@
     display: none !important;
   }
   
-  .d-flex {
+  /* .d-flex {
     display: flex !important;
-  }
+  } */
   
   @media (min-width: 768px) {
   

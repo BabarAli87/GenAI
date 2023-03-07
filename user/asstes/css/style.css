@@ -1,6 +1,9 @@
 body{
     font-family: 'Jost', sans-serif;
 }
+.logo-imgMob{
+    width: 80px;
+}
 .logo-img{
     width: 80px;
 }
@@ -135,6 +138,16 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+.user-imaageMob{
+  width: 50px;
+  height: 50px;
+  border-radius: 22%;
+}
+.mob-nav{
+  background-color: #FFFFFF;
+  padding: 0px 18px;
+  border-radius: 20px;
 }
 .upgradeBtn{
   background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
@@ -980,6 +993,9 @@ justify-content: space-between;
 .border-radius{
   border-radius: 20px;
 }
+.mob-nav{
+  display: none;
+}
 
 @media screen and (min-width:1445px) {
     .main-content{
@@ -997,7 +1013,7 @@ justify-content: space-between;
   @media screen and (max-width:992px) {
    
     #main{
-        display: block;
+        display: inline-block;
     }
     .main-content{
         padding-left: 12px;
@@ -1026,6 +1042,14 @@ justify-content: space-between;
   margin-top: 20px;
 }
 }
+@media screen and (max-width:767px){
+  .mob-display{
+    display: none !important;
+  }
+  .mob-nav{
+    display: block;
+  }
+}
 @media screen and (max-width:842px){
   .refreshBtn{
     margin-bottom: 0;
@@ -1037,9 +1061,10 @@ justify-content: space-between;
   }
 }
 @media screen and (max-width:575px) {
-    .userNav-dropdown{
+    /* .userNav-dropdown{
         display: none !important;
-      }
+      } */
+     
       .btnWraper{
         position: absolute;
     top: 35%;

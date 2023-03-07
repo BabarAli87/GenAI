@@ -61,33 +61,55 @@
             <div class="col-lg-9 main-content pb-2 vh-100">
                 <div class="topbar mb-4">
                     <div class="row">
-                        <div class="col-sm-9 border-right">
-                            <div class="row justify-content-between align-items-center">
-                               
-                                  
-                                  <div class="col-sm-3" id="main">
-                                    <button class="openbtn" onclick="openNav()">☰ </button>  
-                                  </div>
-                                <div class="col-sm-5">
-                                    <h4 class="page-heading mb-0 text-dark">Account</h4>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-primary upgradeBtn"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
+                      <div class="col-sm-12 mob-nav">
+                        <div class="d-flex justify-content-between align-items-center">
+                              <div class=" ps-0" id="main">
+                                <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
+                              </div>
+                            <div class="">
+                                <a href="./user_dashboard.html"><img class="logo-imgMob" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
+                            </div>
+                            <div class="d-flex align-items-center userNav-dropdown">
+                                <div class="dropdown">
+                                    <div class="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img class="user-imaageMob" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                                        
+                                    </div>    
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="./profile.html">Account</a></li>
+                                      <!-- <li><a class="dropdown-item" href="#">LogOut</a></li> -->
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 d-flex align-items-center userNav-dropdown">
-                            <div class="dropdown">
-                                <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
-                                    <span>Saylor Stark</span>
-                                </div>    
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="./profile.html">Account</a></li>
-                                  <!-- <li><a class="dropdown-item" href="#">LogOut</a></li> -->
-                                </ul>
+                    </div>
+                    <div class="col-sm-9 border-right mob-display">
+                        <div class="row justify-content-between align-items-center">
+                           
+                              
+                              <div class="col-sm-3" id="main">
+                                <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
+                              </div>
+                            <div class="col-sm-5">
+                                <h4 class="page-heading">Dashboard</h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary upgradeBtn"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-3 d-flex align-items-center userNav-dropdown mob-display">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                                <span>Saylor Stark</span>
+                            </div>    
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="./profile.html">Account</a></li>
+                              <!-- <li><a class="dropdown-item" href="#">LogOut</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="row">
