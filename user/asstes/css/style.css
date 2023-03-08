@@ -307,9 +307,9 @@ text-fill-color: transparent;
     border: none;
   }
   
-  .openbtn:hover {
+  /* .openbtn:hover {
     background-color: #444;
-  }
+  } */
   
   #main {
     transition: margin-left .5s;
@@ -340,9 +340,6 @@ text-fill-color: transparent;
   }
   
   .progress-text {
-    position: absolute;
-    top: 17px;
-    right: 3px;
 font-size: 20px;
 font-weight: 500;
     background: linear-gradient(180deg, #B4885A 0%, #E7DB6F 50.52%, #B4885A 100%);
@@ -523,13 +520,15 @@ text-fill-color: transparent;
     box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   }
   .refreshBtn:hover{
-    background-color: #DA9D46;
+    background-color: #393939;
+    border-color: #393939;
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
   
   }
   .refreshBtn:active{
-    background-color: #DA9D46 !important;
+    background-color: #393939 !important;
+    /* border-color: #393939; */
      border:none !important;
   }
   .answerCard{
