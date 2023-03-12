@@ -11,11 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../user/asstes/css/style.css">
     <title>Questionnare</title>
-    <style>
-      .form-control{
-        margin-bottom: 0;
-      }
-    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -100,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 d-flex align-items-center justify-content-center userNav-dropdown mob-display">
+                    <div class="col-sm-2 d-flex align-items-center userNav-dropdown mob-display">
                         <div class="dropdown">
                             <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
@@ -290,7 +285,6 @@
                         </div>
                       </div>
                     </div>
-                    </div>
                   </div>
             </div>
         </div>
@@ -404,11 +398,6 @@ liElements.forEach(li => {
           progressText.textContent = `${Math.round(progressPercent)}%`;
         }
         
-        let startDate = document.getElementById('startDate')
-
-startDate.addEventListener('change',(e)=>{
-  let startDateVal = e.target.value
-  document.getElementById('startDateSelected').innerText = startDateVal
-})
+        
         </script>
 </html>

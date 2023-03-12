@@ -1001,7 +1001,9 @@ justify-content: space-between;
   width: 40px;
   height: 40px;
 }
-
+.rangeslider{
+  width: 50%;
+}
 
 .myslider {
   -webkit-appearance: none;
@@ -1043,16 +1045,7 @@ justify-content: space-between;
 .lang-drop:hover{
   color: white;
 }
-.lang-drop option{
-  background-color: white;
-  color: #393939;
-}
-.explain-img{
-  /* margin-top: -20px; */
-  width: 650px;
-  height: 480px;
-}
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1350px) {
     .main-content{
         height: 100vh;
     }

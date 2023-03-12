@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../user/asstes/images/favi.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-<link href="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.css"/>
 <link rel="stylesheet" href="../user/asstes/css/style.css">
-    <title>Templates</title>
+    <title>Questionnare</title>
+    <style>
+      .form-control{
+        margin-bottom: 0;
+      }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -20,11 +23,11 @@
             <div class="col-lg-3 sideNav " id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
-                  <div class="logo" id="logo">
-                    <a href="./user_dashboard.html"><img class="logo-img" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
+                    <div class="logo" id="logo">
+                      <a href="./user_dashboard.html"><img class="logo-img" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
 
-                    
-                </div>
+                        
+                    </div>
                     <ul class="list-unstyled sideNav-list">
                       <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/Dashboard-gold.png">
                         <span class="sidnav-icons" style="background-image: url('../user/asstes/images/Dashboard-black.png');"></span>
@@ -43,9 +46,7 @@
                         <a href="./pricing.html" class="sideNav-list-items-text">Pricing</a>
                       </li>
                     </ul>  
-                    
-                    
-                    <div class="d-flex justify-content-center align-items-end  vh-50">
+                    <div class="d-flex justify-content-center align-items-end vh-50">
                       <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
                           <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
@@ -59,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 main-content vh-100">
+            <div class="col-lg-9 main-content pb-3">
                 <div class="topbar mb-4">
                     <div class="row">
                       <div class="col-sm-12 mob-nav">
@@ -92,7 +93,7 @@
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
                               </div>
                             <div class="col-sm-5">
-                                <h4 class="page-heading">Templates</h4>
+                                <h4 class="page-heading">Questionnare</h4>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-primary upgradeBtn float-end"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
@@ -114,71 +115,77 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 mb-3 mb-sm-0">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="text-center">
-                                <a href="./Questionnare.html" class="btn btn-primary buy-btn">Add New</a>
+                    <div class="col-md-12 mb-3 mb-sm-0">
+                      <div class="card answerCard pb-3">
+                        <div class="card-body">
+                          <h4 class="card-title answerCard-heading">Finalize your letter</h4>
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputState" class="form-label">Output In</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>English</option>
+                                <option>Spainish</option>
+                              </select>
                             </div>
-                        </div>
+                            <div class="col-md-6">
+                              <label for="inputState" class="form-label">Tone</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Tone</option>
+                                <option>Default</option>
+                                <option>Acdemic</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Organization Name</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Subject</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Custmor refrence No</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputState" class="form-label">Date</label>
+                              <input id="startDate" class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputCity" class="form-label">State</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputCity" class="form-label">Zip Code</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Organization Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="" class="form-label">Your Name</label>
+                              <input type="text" class="form-control" id="">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="" class="form-label">Your Address</label>
+                              <input type="text" class="form-control" id="">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="" class="form-label">Your Signature</label>
+                              <input type="text" class="form-control" id="">
+                            </div>
+                          </form>
+                            <div class="d-flex justify-content-center align-content-center mt-3">
+                              <a href="./Preview.html" type="submit" class="submit-btn">Submit</a>
+                            </div>
+                      </div>
                     </div>
-                    <div class="col-lg-12">
-                        <table id="example" class="display table-responsive mb-3" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Actions</th>
-                                    <th>Templates</th>
-                                    <th>No of refreshes</th>
-                                    <th>No of forms</th>
-                                    <th>Status</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                    </td>
-                                    <td>Wasa Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                        
-                                    </td>
-                                    <td>ground Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="confirmationModalLabel">Confirmation Modal</h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <p>Are you sure you want to Delete?</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
-                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </tbody>
-                        </table>
-                    </div>
+                   
                   </div>
             </div>
         </div>
@@ -191,6 +198,7 @@
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
       document.getElementById("logo").style.justifyContent = "center";
+
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
     }
@@ -199,6 +207,7 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
       document.getElementById("logo").style.justifyContent = "start";
+      
       document.getElementById("main").style.marginLeft= "0";
     }
 
@@ -217,8 +226,6 @@ function match() {
 minWidth769.addListener(match);
 
 match();
-
-
 //change li images on hover
 
 const liElements = document.querySelectorAll('.sideNav-list-items');
@@ -236,18 +243,62 @@ liElements.forEach(li => {
     iconSpan.style.backgroundImage = originalBackgroundImage;
   });
 });
-
-
-// $('#example').DataTable( {
-//     scrollX:        200,
-//     deferRender:    true,
-//     scroller:       true
-// } );
-
-//change li images on hover
-$(document).ready(function () {
-    $('#example').DataTable();
-});
     </script>
-   <script src="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.js"></script>
+    <script>
+        const form = document.getElementById("form-wizard");
+        const progress = document.querySelector(".progress-bar");
+        const progressText = document.querySelector(".progress-text");
+        const prevBtns = document.querySelectorAll(".prev-btn");
+        const nextBtns = document.querySelectorAll(".next-btn");
+        const steps = document.querySelectorAll(".step");
+        
+        let currentStep = 0;
+        
+        // Next button click event listeners
+        nextBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (currentStep < steps.length - 1) {
+              steps[currentStep].classList.remove("active","slide-in-left");
+              steps[currentStep].classList.add("completed", "slide-out-left");
+              currentStep++;
+              steps[currentStep].classList.remove("slide-out-right");
+              steps[currentStep].classList.add("active", "slide-in-right");
+              updateProgressBar();
+            }
+            if (currentStep === steps.length - 1) {
+              btn.textContent = "Submit";
+            }
+          });
+        });
+        
+        // Prev button click event listeners
+        prevBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (currentStep > 0) {
+              steps[currentStep].classList.remove("active","slide-in-right");
+              steps[currentStep].classList.add("slide-out-right");
+              currentStep--;
+              steps[currentStep].classList.remove("completed", "slide-out-left");
+              steps[currentStep].classList.add("active", "slide-in-left");
+              updateProgressBar();
+              nextBtns[currentStep].textContent = "Next";
+            }
+          });
+        });
+        
+        // Form submit event listener
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          
+        });
+        
+        // Update progress bar and progress text
+        function updateProgressBar() {
+          const progressPercent = (currentStep / (steps.length - 1)) * 100;
+          progress.style.width = `${progressPercent}%`;
+          progressText.textContent = `${Math.round(progressPercent)}%`;
+        }
+        
+        
+        </script>
 </html>

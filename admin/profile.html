@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../user/asstes/images/favi.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-<link href="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.css"/>
 <link rel="stylesheet" href="../user/asstes/css/style.css">
-    <title>Templates</title>
+<link rel="stylesheet" href="../user/asstes/css/profile.css">
+    <title>Profile</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 sideNav " id="mySidebar">
+            <div class="col-lg-3 sideNav" id="mySidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="position-sticky top-0">
                   <div class="logo" id="logo">
@@ -45,7 +44,7 @@
                     </ul>  
                     
                     
-                    <div class="d-flex justify-content-center align-items-end  vh-50">
+                    <div class="d-flex justify-content-center align-items-end vh-50 ">
                       <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
                           <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
@@ -59,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 main-content vh-100">
+            <div class="col-lg-9 main-content pb-2 vh-100">
                 <div class="topbar mb-4">
                     <div class="row">
                       <div class="col-sm-12 mob-nav">
@@ -92,14 +91,14 @@
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
                               </div>
                             <div class="col-sm-5">
-                                <h4 class="page-heading">Templates</h4>
+                                <h4 class="page-heading">Profile</h4>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-primary upgradeBtn float-end"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 d-flex align-items-center justify-content-center userNav-dropdown mob-display">
+                    <div class="col-sm-2 d-flex align-items-center userNav-dropdown mob-display">
                         <div class="dropdown">
                             <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
@@ -114,72 +113,114 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 mb-3 mb-sm-0">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="text-center">
-                                <a href="./Questionnare.html" class="btn btn-primary buy-btn">Add New</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <table id="example" class="display table-responsive mb-3" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Actions</th>
-                                    <th>Templates</th>
-                                    <th>No of refreshes</th>
-                                    <th>No of forms</th>
-                                    <th>Status</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                    </td>
-                                    <td>Wasa Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                        
-                                    </td>
-                                    <td>ground Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="confirmationModalLabel">Confirmation Modal</h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="mainProfile-conten">
+                        <!-- Page content -->
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                              <div class="card card-profile shadow">
+                                <div class="row justify-content-center">
+                                  <div class="col-lg-3 order-lg-2">
+                                    <div class="card-profile-image">
+                                      <a href="#">
+                                        <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                                  <!-- <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
+                                    <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+                                  </div> -->
+                                </div>
+                                <div class="card-body pt-0 pt-md-4">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                                        <div>
+                                          <span class="heading text-dark">22</span>
+                                          <span class="description text-dark">Refreshes</span>
                                         </div>
-                                        <div class="modal-body">
-                                          <p>Are you sure you want to Delete?</p>
+                                        <div>
+                                          <span class="heading text-dark">10</span>
+                                          <span class="description text-dark">Forms</span>
                                         </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
-                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
+                                        <div>
+                                          <span class="heading text-dark">Basic</span>
+                                          <span class="description text-dark">Plan</span>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
+                                  <div class="text-center">
+                                    <h5 class="text-dark">
+                                        Saylor Stark
+                                    </h5>
+                                    <p class="desg text-dark">Software Engineer</p>
+                                    <!-- <div class="d-flex align-items-center justify-content-between">
+                                      <p class="desg text-dark mb-0">London</p>
+                                    </div> -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xl-8 order-xl-1">
+                              <div class="card bg-secondary shadow">
+                                <div class="card-header bg-white border-0">
+                                  <div class="row align-items-center">
+                                    <div class="col-8">
+                                      <h3 class="mb-0 text-dark">My account</h3>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                      <a href="#!" class="btn btn-sm btn-primary editBtn">Edit</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  <form>
+                                    <h6 class="heading-small text-muted mb-4">User information</h6>
+                                    <div class="pl-lg-4">
+                                      <div class="row">
+                                        <div class="col-lg-6">
+                                          <div class="form-group focused">
+                                            <label class="form-control-label text-dark" for="input-username">Full Name</label>
+                                            <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Saylor Stark">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label class="form-control-label text-dark" for="input-email">Email address</label>
+                                            <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="SaylorStark@example.com">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-lg-6">
+                                          <div class="form-group focused">
+                                            <label class="form-control-label text-dark" for="input-first-name">Designation</label>
+                                            <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Softwrae Engineer" value="">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-group focused">
+                                            <label class="form-control-label text-dark" for="input-last-name">Country</label>
+                                            <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="England" value="">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                
+                                  </form>
+                                  <a href="#!" class="btn btn-sm btn-primary saveBtn">Save</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
@@ -237,17 +278,6 @@ liElements.forEach(li => {
   });
 });
 
-
-// $('#example').DataTable( {
-//     scrollX:        200,
-//     deferRender:    true,
-//     scroller:       true
-// } );
-
-//change li images on hover
-$(document).ready(function () {
-    $('#example').DataTable();
-});
     </script>
-   <script src="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.js"></script>
+   
 </html>

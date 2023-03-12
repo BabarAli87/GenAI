@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../user/asstes/images/favi.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-<link href="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.css"/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
 <link rel="stylesheet" href="../user/asstes/css/style.css">
-    <title>Templates</title>
+    <title>Guide</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -49,7 +51,7 @@
                       <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
                           <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
-                          <a href="./support.html" target="_blank" class="sideNav-list-items-text">Support</a>
+                          <a href="#" class="sideNav-list-items-text">Support</a>
                           </li>
                           <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/loogout-gold.png">
                           <span class="sidnav-icons" style="background-image: url('../user/asstes/images/logout-black.png');"></span>
@@ -59,10 +61,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 main-content vh-100">
-                <div class="topbar mb-4">
-                    <div class="row">
-                      <div class="col-sm-12 mob-nav">
+            <div class="col-lg-9 main-content">
+              <div class="topbar mb-4">
+                <div class="row">
+                    <div class="col-sm-12 mob-nav">
                         <div class="d-flex justify-content-between align-items-center">
                               <div class=" ps-0" id="main">
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
@@ -92,14 +94,14 @@
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
                               </div>
                             <div class="col-sm-5">
-                                <h4 class="page-heading">Templates</h4>
+                                <h4 class="page-heading mb-0">Guide</h4>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-primary upgradeBtn float-end"><img class="upgrade-icon" src="./asstes/images/Vector.png"><span class="upgradeTxt">Upgrade Plan</span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 d-flex align-items-center justify-content-center userNav-dropdown mob-display">
+                    <div class="col-sm-2 d-flex align-items-center userNav-dropdown mob-display">
                         <div class="dropdown">
                             <div class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="user-imaage" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
@@ -111,73 +113,54 @@
                             </ul>
                         </div>
                     </div>
-                    </div>
                 </div>
+            </div>
                 <div class="row">
-                    <div class="col-lg-12 mb-3 mb-sm-0">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="text-center">
-                                <a href="./Questionnare.html" class="btn btn-primary buy-btn">Add New</a>
+                    <div class="col-lg-12 mt-3">
+                       <div>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle lang-drop" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <i class="flag-united-kingdom flag m-0"></i>
+                                    English
+                                </a>
+                            
+                                <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i class="fa fa-check text-success ms-2"></i></a>
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <table id="example" class="display table-responsive mb-3" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Actions</th>
-                                    <th>Templates</th>
-                                    <th>No of refreshes</th>
-                                    <th>No of forms</th>
-                                    <th>Status</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                    </td>
-                                    <td>Wasa Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
-                                            <img class="trash-icon" src="./asstes/images/delete.png">
-                                        </a>
-                                        
-                                    </td>
-                                    <td>ground Complain</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>Active</td>
-                                    
-                                </tr>
-                                <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="confirmationModalLabel">Confirmation Modal</h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <p>Are you sure you want to Delete?</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
-                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </tbody>
-                        </table>
+                            <div>
+                                <a href="#">
+                                    <img src="./asstes/images/">
+                                </a>
+                            </div>
+                       </div>
                     </div>
                   </div>
             </div>
@@ -191,14 +174,17 @@
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
       document.getElementById("logo").style.justifyContent = "center";
+
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
+
     }
     
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
       document.getElementById("logo").style.justifyContent = "start";
+      
       document.getElementById("main").style.marginLeft= "0";
     }
 
@@ -238,16 +224,17 @@ liElements.forEach(li => {
 });
 
 
-// $('#example').DataTable( {
-//     scrollX:        200,
-//     deferRender:    true,
-//     scroller:       true
-// } );
-
-//change li images on hover
-$(document).ready(function () {
-    $('#example').DataTable();
-});
+var rangeslider = document.getElementById("sliderRange");
+var output = document.getElementById("demo");
+output.innerHTML = rangeslider.value;
+  
+rangeslider.oninput = function() {
+  output.innerHTML = this.value;
+}
     </script>
-   <script src="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.js"></script>
+   <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
 </html>
