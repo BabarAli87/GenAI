@@ -107,6 +107,48 @@
                     </div>
                 </div>
                 <div class="row">
+                  <div class="col-lg-12 mb-3 mb-sm-0">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-center">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary buy-btn">Add New</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add New User</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form class="row g-3">
+                                  <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">User Name</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Email</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Type</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Status</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" type="submit" class="submit-btn">Close</a>
+                                <a href="#" type="submit" class="submit-btn">Save</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
                     <div class="col-lg-12">
                         <table id="example" class="display table-responsive mb-3" style="width:100%">
                             <thead>
@@ -126,6 +168,9 @@
                                         <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
                                         </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img class="trash-icon" src="./asstes/images/pencil.png">
+                                        </a>
                                     </td>
                                     <td><a class="text-decoration-none" href="./user-profile.html">John Doe</a></td>
                                     <td>Johndoe@gmail.com</td>
@@ -142,6 +187,9 @@
                                     <td>
                                         <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
+                                        </a>
+                                        <a class="trash" data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img class="trash-icon" src="./asstes/images/pencil.png">
                                         </a>
                                         
                                     </td>
@@ -163,6 +211,42 @@
                                         </div>
                                         <div class="modal-body">
                                           <p>Are you sure you want to Delete?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
+                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="editModalLabel">Edit UserInfo</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <form class="row">
+                                            <div class="col-md-12">
+                                              <label for="inputEmail4" class="form-label">User Name</label>
+                                              <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label for="inputPassword4" class="form-label">Email</label>
+                                              <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Type</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Status</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
+                                            </div>
+                                          </form>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>

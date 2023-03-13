@@ -172,6 +172,9 @@
                                         <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
                                         </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#editmodal">
+                                            <img class="trash-icon" src="./asstes/images/pencil.png">
+                                        </a>
                                     </td>
                                     <td>Basic</td>
                                     <td>Test Plan</td>
@@ -185,7 +188,9 @@
                                         <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
                                         </a>
-                                        
+                                        <a data-bs-toggle="modal" data-bs-target="#editmodal">
+                                          <img class="trash-icon" src="./asstes/images/pencil.png">
+                                      </a>
                                     </td>
                                     <td>Pro</td>
                                     <td>Test Plan</td>
@@ -211,6 +216,47 @@
                                       </div>
                                     </div>
                                   </div>
+                                <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="editmodalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="confirmationModalLabel">Edit</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="row g-3">
+                                            <div class="col-md-6">
+                                              <label for="inputEmail4" class="form-label">Subscripition Name</label>
+                                              <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputPassword4" class="form-label">Price</label>
+                                              <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputEmail4" class="form-label">No of refreshes</label>
+                                              <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputPassword4" class="form-label">No of forms</label>
+                                              <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label for="inputPassword4" class="form-label">Description</label>
+                                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
+                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
                             </tbody>
                         </table>
                     </div>

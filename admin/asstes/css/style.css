@@ -859,8 +859,8 @@ div#example_length label select{
   max-width: 115px;
 }
 #confirmBtn {
-  background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
-  border: none;
+  background-color: #393939;
+  border-color: #393939;
   border-radius: 99px;
   padding: 6px 45px;
   color: white;
@@ -869,8 +869,8 @@ div#example_length label select{
 }
 
 #confirmBtn:hover {
-  background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
-  border: none;
+  background-color: #393939;
+  border-color: #393939;
   border-radius: 99px;
   padding: 6px 45px;
   color: white;

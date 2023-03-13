@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 <link href="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.css"/>
-<link rel="stylesheet" href="../user/asstes/css/style.css">
+<link rel="stylesheet" href="./asstes/css/style.css">
     <title>Templates</title>
 </head>
 <body>
@@ -132,6 +132,9 @@
                                         <a data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
                                         </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img class="trash-icon" src="./asstes/images/pencil.png">
+                                        </a>
                                     </td>
                                     <td>Wasa Complain</td>
                                     <td>test</td>
@@ -145,6 +148,9 @@
                                         <a class="trash" data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <img class="trash-icon" src="./asstes/images/delete.png">
                                         </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#editModal">
+                                          <img class="trash-icon" src="./asstes/images/pencil.png">
+                                      </a>
                                         
                                     </td>
                                     <td>test Complain</td>
@@ -162,6 +168,42 @@
                                         </div>
                                         <div class="modal-body">
                                           <p>Are you sure you want to Delete?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
+                                          <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="editModalLabel">Edit UserInfo</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <form class="row">
+                                            <div class="col-md-12">
+                                              <label for="inputEmail4" class="form-label">Template Name</label>
+                                              <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label for="inputPassword4" class="form-label">Description</label>
+                                              <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">No tags</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">No of questions</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
+                                            </div>
+                                          </form>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
