@@ -1052,6 +1052,9 @@ justify-content: space-between;
   width: 650px;
   height: 480px;
 }
+.explain-img-mob{
+  display: none;
+}
 @media screen and (min-width:1440px) {
     .main-content{
         height: 100vh;
@@ -1102,6 +1105,14 @@ justify-content: space-between;
     display: none !important;
   }
   .mob-nav{
+    display: block;
+  }
+}
+@media screen and (max-width:660px){
+  .explain-img{
+  display: none;
+  }
+  .explain-img-mob{
     display: block;
   }
 }

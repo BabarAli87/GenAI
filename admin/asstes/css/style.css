@@ -854,17 +854,16 @@ div#example_length label select{
   background-color: #393939;
   border-color: #393939;
   border-radius: 99px;
-  padding: 6px 34px;
   color: white;
-  max-width: 115px;
+  min-width: 115px;
 }
 #confirmBtn {
   background-color: #393939;
   border-color: #393939;
   border-radius: 99px;
-  padding: 6px 45px;
   color: white;
-  max-width: 115px;
+  min-width: 115px;
+
 
 }
 
