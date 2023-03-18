@@ -467,6 +467,9 @@
 	background-color: transparent;
 	box-shadow: none;
 }
+ul.pagination {
+	justify-content: end;
+}
 /* Responsive */
 /* @media screen and (max-width: 1199px) {
 	.wizard-v3-content {

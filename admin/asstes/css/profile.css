@@ -6,7 +6,37 @@
 
   
 
+    .image-upload
+    {
+    position: relative;
+      text-align: center;
+      color: white;
+      font-size: 20px;
   
+    }
+    /* .image-upload::before
+    {
+      content: "";
+      position: absolute;
+      left: 58%;
+      top: 13%;
+      background-image: black;
+      background-size: cover;
+      padding: 8px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    } */
+    .image-upload > input
+    {
+        display: none;
+    }
+    
+    .image-upload img
+    {
+        width: 80px;
+        cursor: pointer;
+    }
   [tabindex='-1']:focus {
     outline: 0 !important;
   }
@@ -1367,12 +1397,12 @@
   .card-profile-image img {
     position: absolute;
     left: 50%;
-    max-width: 180px;
+    max-width: 110px;
     transition: all .15s ease;
     transform: translate(-50%, -30%);
     border-radius: .375rem;
-    top: 32px;
-  }
+    top: 10px;
+}
   
   .card-profile-image img:hover {
     transform: translate(-50%, -33%);
@@ -1869,7 +1899,7 @@
     margin-bottom: 20px;
   }
   .desg{
-    font-size: 13px;
+    font-size: 16px;
   }
   .editBtn{
     background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%);
