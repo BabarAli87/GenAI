@@ -1065,6 +1065,9 @@ justify-content: space-between;
         height: 100vh;
     }
 } */
+#example_wrapper .row .col-sm-12{
+  overflow-x: auto;
+}
 @media screen and (max-width:1200px) {
   .thirdCard .row{
     height: inherit;
