@@ -417,6 +417,7 @@
 	color: white !important;
 	padding: 10px 25px;
 	min-width: 115px;
+	cursor: pointer;
 }
 .files input {
     outline: 2px dashed #393939;

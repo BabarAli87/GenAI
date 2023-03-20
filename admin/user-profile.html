@@ -10,9 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 <link href="https://cdn.datatables.net/v/bs4/dt-1.13.2/datatables.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="./asstes/css/style.css">
 <link rel="stylesheet" href="./asstes/css/profile.css">
-    <title>User Profile</title>
+    <title>User Profiles</title>
     <style>
       .card-profile-image img {
     position: absolute;
@@ -36,27 +38,36 @@
                     
                 </div>
                 <ul class="list-unstyled sideNav-list">
-                    <li class="sideNav-list-items" data-hover-background-image="./asstes/images/Dashboard-gold.png">
-                      <span class="sidnav-icons" style="background-image: url('./asstes/images/Dashboard-black.png');"></span>
+                    <li class="sideNav-list-items">
+                      <!-- <span class="sidnav-icons" style="background-image: url('./asstes/images/home.png');"></span> -->
+                      <span>
+                        <i class="fa-solid fa-house sidnav-icons"></i>
+                      </span>
                       <a href="./admin-dashboard.html" class="sideNav-list-items-text">Dashboard</a>
                     </li>
-                    <li class="sideNav-list-items" data-hover-background-image="./asstes/images/questionnare-gold.png">
-                      <span class="sidnav-icons" style="background-image: url('./asstes/images/questionnare-black.png');"></span>
+                    <li class="sideNav-list-items">
+                        <span>
+                        <i class="fa-sharp fa-solid fa-users sidnav-icons"></i>
+                        </span>
                       <a href="./user-management.html" class="sideNav-list-items-text">User Management</a>
                     </li>
-                    <li class="sideNav-list-items" data-hover-background-image="./asstes/images/pricing-gold.png">
-                      <span class="sidnav-icons" style="background-image: url('./asstes/images/pricing-black.png');"></span>
+                    <li class="sideNav-list-items">
+                        <span>
+                        <i class="fa-solid fa-hand-holding-dollar sidnav-icons"></i>
+                        </span>
                       <a href="./subscripition-management.html" class="sideNav-list-items-text">Subscription Management</a>
                     </li>
-                    <li class="sideNav-list-items" data-hover-background-image="./asstes/images/template-gold.png">
-                      <span class="sidnav-icons" style="background-image: url('./asstes/images/template-blck.png');"></span>
+                    <li class="sideNav-list-items">
+                        <span>
+                        <i class="bi bi-grid-1x2-fill sidnav-icons"></i>
+                        </span>
                       <a href="./Custom-templates.html" class="sideNav-list-items-text">Custom Templates</a>
                     </li>
                   </ul>  
                   <div class="d-flex justify-content-center align-items-end vh-50">
                     <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
-                        <li class="sideNav-list-items" data-hover-background-image="./asstes/images/loogout-gold.png">
-                        <span class="sidnav-icons" style="background-image: url('./asstes/images/logout-black.png');"></span>
+                        <li class="sideNav-list-items">
+                            <i class="fa-solid fa-right-from-bracket sidnav-icons"></i>
                         <a href="#" class="sideNav-list-items-text">Logout</a>
                         </li>
                     </ul>
@@ -138,76 +149,57 @@
                                     <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
                                     <a href="#" class="btn btn-sm btn-default float-right">Message</a>
                                   </div> -->
+                                  <div class="image-upload">
+                                    <label for="file-input">
+                                      <i class="fa-solid fa-camera"></i>
+                                    </label>
+                                
+                                    <input id="file-input" type="file"/>
+                                </div>
                                 </div>
                                 <div class="card-body pt-0 pt-md-4">
-                                  <div class="row">
-                                    <div class="col">
-                                      <div class="card-profile-stats d-flex justify-content-center mt-md-1">
-                                        <div>
-                                          <span class="heading text-dark">22</span>
-                                          <span class="description text-dark">Refreshes</span>
-                                        </div>
-                                        <div>
-                                          <span class="heading text-dark">10</span>
-                                          <span class="description text-dark">Forms</span>
-                                        </div>
-                                        <div>
-                                          <span class="heading text-dark">Basic</span>
-                                          <span class="description text-dark">Plan</span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
                                   <div class="text-center">
                                     <h5 class="text-dark">
                                         Saylor Stark
                                     </h5>
-                                    <p class="desg text-dark">England</p>
-                                    <!-- <div class="d-flex align-items-center justify-content-between">
-                                      <p class="desg text-dark mb-0">London</p>
-                                    </div> -->
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                  <p class="desg text-dark">Email: <br>Test@gmail.com</p>
+                                  <p class="desg text-dark ">Type: <br>10</p>
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                  <p class="desg text-dark">Status: <br>Active</p>
+
+                                    <p class="desg text-dark text-center">Subscription: <br>Pro</p>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xl-8 order-xl-1">
-                              <table id="example" class="display table-responsive mb-3" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Plan</th>
-                                        <th>Date of purchase</th>
-                                        <th>Date of expiry</th>
-                                        <th>Status</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Basic</td>
-                                        <td>01/01/2023</td>
-                                        <td>01/05/2023</td>
-                                        <td>Active</td>
-                                        
-                                    </tr>
-                                    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="confirmationModalLabel">Confirmation Modal</h5>
-                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                              <p>Are you sure you want to Delete?</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cancelBtn">Cancel</button>
-                                              <button type="button" class="btn btn-primary" id="confirmBtn">Yes</button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                </tbody>
-                            </table>
+                            <div class="col-xl-8 order-xl-1 edit-form">
+                              <form class="row">
+                                <div class="col-md-12">
+                                  <label for="inputEmail4" class="form-label">User name</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="inputPassword4" class="form-label">Email</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="inputPassword4" class="form-label">Subscription</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="row pe-0">
+                                  <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Type</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6 pe-0">
+                                    <label for="inputPassword4" class="form-label">Status</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>
+                                </div>
+                              </form>
                             </div>
                           </div>
                         </div>

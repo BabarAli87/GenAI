@@ -1453,7 +1453,7 @@
   @media (min-width: 768px) {
     .mainProfile-conten .container-fluid {
       padding-right: 39px !important;
-      padding-left: 0px !important;
+      padding-left: 39px !important;
     }
   }
   @media (max-width: 992px) {
@@ -1915,4 +1915,9 @@
     border: none;
     font-size: 16px;
     float: right;
+  }
+  .edit-form{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 15px 15px;
   }
