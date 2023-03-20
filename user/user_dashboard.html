@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="../user/asstes/css/style.css">
 <link rel="stylesheet" href="../user/asstes/css/progressBar.css">
     <title>Dashboard</title>
@@ -24,31 +26,42 @@
                         
                     </div>
                     <ul class="list-unstyled sideNav-list">
-                        <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/Dashboard-gold.png">
-                          <span class="sidnav-icons" style="background-image: url('../user/asstes/images/Dashboard-black.png');"></span>
+                        <li class="sideNav-list-items">
+                            <span>
+                                <i class="fa-solid fa-house sidnav-icons"></i>
+                              </span>
                           <a href="./user_dashboard.html" class="sideNav-list-items-text">Dashboard</a>
                         </li>
-                        <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/questionnare-gold.png">
-                          <span class="sidnav-icons" style="background-image: url('../user/asstes/images/questionnare-black.png');"></span>
+                        <li class="sideNav-list-items">
+                            <span>
+                                <i class="fa-solid fa-circle-question sidnav-icons"></i>
+                                </span>
                           <a href="./explainer.html" class="sideNav-list-items-text">Questionnaire</a>
                         </li>
                         <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/template-gold.png">
-                          <span class="sidnav-icons" style="background-image: url('../user/asstes/images/template-blck.png');"></span>
+                            <span>
+                                <i class="bi bi-grid-1x2-fill sidnav-icons sidnav-icons"></i>
+                                </span>
+                           
                           <a href="./Template.html" class="sideNav-list-items-text">Templates</a>
                         </li>
-                        <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/pricing-gold.png">
-                          <span class="sidnav-icons" style="background-image: url('../user/asstes/images/pricing-black.png');"></span>
+                        <li class="sideNav-list-items">
+                            <span>
+                                <i class="fa-solid fa-hand-holding-dollar sidnav-icons"></i>
+                                </span>
                           <a href="./pricing.html" class="sideNav-list-items-text">Pricing</a>
                         </li>
                       </ul>  
                       <div class="d-flex justify-content-center align-items-end vh-50">
                         <ul class="list-unstyled sideNav-list-bottom w-100 mb-0">
-                            <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/support-gold.png">
-                            <span class="sidnav-icons" style="background-image: url('../user/asstes/images/support-black.png');"></span>
+                            <li class="sideNav-list-items">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-headset sidnav-icons"></i>
+                                </span>
                             <a href="./support.html" target="_blank" class="sideNav-list-items-text">Support</a>
                             </li>
-                            <li class="sideNav-list-items" data-hover-background-image="../user/asstes/images/loogout-gold.png">
-                            <span class="sidnav-icons" style="background-image: url('../user/asstes/images/logout-black.png');"></span>
+                            <li class="sideNav-list-items">
+                                <i class="fa-solid fa-right-from-bracket sidnav-icons"></i>
                             <a href="#" class="sideNav-list-items-text">Logout</a>
                             </li>
                         </ul>
@@ -220,7 +233,7 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("mySidebar").style.backgroundColor = "rgb(255 255 255 / 87%)";
       document.getElementById("logo").style.justifyContent = "center";
 
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
