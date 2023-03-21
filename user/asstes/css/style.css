@@ -2,13 +2,16 @@ body{
     font-family: 'Jost', sans-serif;
 }
 .logo-imgMob{
-    width: 150px;
+  margin-top: 12px;
+    width: 70px;
 }
 .logo-img{
-    width: 150px;
+  margin-top: 12px;
+    width: 70px;
 }
 .logo-imgQuestino{
-    width: 150px;
+  margin-top: 12px;
+    width: 70px;
 }
 .logo-name{
     margin-left: -34px;
@@ -1078,6 +1081,7 @@ justify-content: space-between;
  
     #main{
         display: inline-block;
+        margin-left: -9px;
     }
     .main-content{
         padding-left: 12px;
@@ -1097,10 +1101,18 @@ justify-content: space-between;
     display: block;
   }
   .logo-img{
-    margin-left: 10px;
+    margin-top: 0;
+    margin-left: -23px;
 }
   .logo-imgQuestino{
-    margin-left: 10px;
+    margin-top: 0;
+
+    margin-left: -23px;
+}
+.logo-imgMob{
+  margin-top: 0;
+
+  margin-left: -23px;
 }
 .visaCardImg{
   margin-top: 20px;
@@ -1153,11 +1165,11 @@ justify-content: space-between;
         padding: 10px;
       }
       .langDrop-wraper{
-        justify-content: center;
+        /* justify-content: center; */
         flex-wrap: nowrap;
       }
       .lang-drop{
-        padding: 0;
+        padding: 5px 30px;
         font-size: 12px;
       }
       .questions-slider{
@@ -1176,3 +1188,22 @@ justify-content: space-between;
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
   }
+  .slide {
+    display: none;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .slide.show {
+    display: block;
+  }
+.fn-input input[type='text'] {
+  overflow: hidden;
+  display: none;
+  margin-bottom: 1rem;
+}
+.dn-input input[type='date'] {
+  overflow: hidden;
+  display: none;
+  margin-bottom: 1rem;
+}
+  

@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../user/asstes/css/style.css">
     <title>Templates</title>
     <style>
-        @media screen and (min-width:550px) {
+        @media screen and (min-width:350px) {
     .main-content{
         height: 100vh;
     }
@@ -206,7 +206,8 @@
 <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("mySidebar").style.backgroundColor = "rgb(255 255 255 / 97%)";
+      document.getElementById("mySidebar").style.display = "block";
       document.getElementById("logo").style.justifyContent = "center";
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
@@ -216,7 +217,8 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
       document.getElementById("logo").style.justifyContent = "start";
-      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("mySidebar").style.display = "none";
+    //   document.getElementById("main").style.marginLeft= "0";
     }
 
 
@@ -228,6 +230,8 @@ function match() {
     minWidth769.matches ? classList.add('sidebar') : classList.remove('sidebar');
     if(minWidth769.matches){
         document.getElementById("mySidebar").style.boxShadow = "none";
+      document.getElementById("mySidebar").style.display = "none";
+
     }
 }
 

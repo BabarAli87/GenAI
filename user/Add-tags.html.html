@@ -133,74 +133,83 @@
                           <h4 class="card-title answerCard-heading">Finalize your letter</h4>
                           <form class="row g-3">
                             <div class="col-md-6">
-                              <label for="inputState" class="form-label">Output In</label>
-                              <select id="inputState" class="form-select">
-                                <option selected>English</option>
-                                <option>Spanish</option>
-                              </select>
+                              
+                              <div class="row">
+                                <div class="col-lg-12 mb-3">
+                                  <label for="inputState" class="form-label">Output In</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>English</option>
+                                    <option>Spanish</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                  <label for="gridCheck1" class="form-label">Add Organization Name</label>
+                                  <input type="text" class="form-control" id="Organization">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                  <label for="gridCheck2" class="form-label">Add Subject</label>
+                                  <input type="text" class="form-control" id="Subject">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                  <label for="gridCheck3" class="form-label"> Add Customer reference No</label>
+                                  <input type="text" class="form-control" id="Customer">
+                                </div>
+                                <div class="col-md-12 dn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                  <label for="gridCheck4" class="form-label">Add Date</label>
+                                  <input id="startDate" class="form-control" type="date"/>
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck5">
+                                  <label for="gridCheck5" class="form-label">Add City</label>
+                                  <input type="text" class="form-control" id="city">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck6">
+                                  <label for="gridCheck6" class="form-label">Add State</label>
+                                  <input type="text" class="form-control" id="state">
+                                </div>
+                              </div>
                             </div>
                             <div class="col-md-6">
-                              <label for="inputState" class="form-label">Tone</label>
+                              <div class="row">
+                                <div class="col-lg-12 mb-3">
+                                  <label for="inputState" class="form-label">Tone</label>
                               <select id="inputState" class="form-select">
                                 <option selected>Tone</option>
                                 <option>Default</option>
                                 <option>
                                   Academic</option>
                               </select>
-                            </div>
-                            <div class="col-md-6">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label">Add Organization Name</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-6">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label">Add Subject</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-6">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label"> Add Customer reference No</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-6">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputState" class="form-label">Add Date</label>
-                              <input id="startDate" class="form-control" type="date" />
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label">Add City</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label">Add State</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputCity" class="form-label">Add Zip Code</label>
-                              <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-12">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="inputAddress" class="form-label">Add Organization Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="" class="form-label">Add Your Name</label>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="" class="form-label">Add Your Address</label>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-4">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label for="" class="form-label">Add Your Signature</label>
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck7">
+                                  <label for="gridCheck7" class="form-label">Add Zip Code</label>
+                                  <input type="text" class="form-control" id="zip">
+                                </div>
+                                <div class="col-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck8">
+                                  <label for="gridCheck8" class="form-label">Add Organization Address</label>
+                                  <input type="text" class="form-control" id="organizationAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck9">
+                                  <label for="gridCheck9" class="form-label">Add Your Name</label>
+                                  <input type="text" class="form-control" id="your_name">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck10">
+                                  <label for="gridCheck10" class="form-label">Add Your Address</label>
+                                  <input type="text" class="form-control" id="your_address">
+                                </div>
+                                <div class="col-md-12 fn-input">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label for="" class="form-label">Add Your Signature</label>
+                                </div>
+                              </div>
                             </div>
                           </form>
                             <div class="d-flex justify-content-center align-content-center mt-3">
@@ -219,8 +228,9 @@
 <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("mySidebar").style.backgroundColor = "rgb(255 255 255 / 97%)";
       document.getElementById("logo").style.justifyContent = "center";
+      document.getElementById("mySidebar").style.display = "block";
 
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
@@ -230,8 +240,10 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
       document.getElementById("logo").style.justifyContent = "start";
+      document.getElementById("mySidebar").style.display = "none";
+
       
-      document.getElementById("main").style.marginLeft= "0";
+      // document.getElementById("main").style.marginLeft= "0";
     }
 
 
@@ -243,12 +255,38 @@ function match() {
     minWidth769.matches ? classList.add('sidebar') : classList.remove('sidebar');
     if(minWidth769.matches){
         document.getElementById("mySidebar").style.boxShadow = "none";
+      document.getElementById("mySidebar").style.display = "none";
+
     }
 }
 
 minWidth769.addListener(match);
 
 match();
+$(".fn-input input[type=checkbox]").change(function(){
+    var checkbox = $(this);
+    if(checkbox.is(":checked")){
+        checkbox.closest(".fn-input").find("input[type=text]").slideDown();
+        console.log("che")
+    }
+    else{
+        console.log("no che")
+        checkbox.closest(".fn-input").find("input[type=text]").slideUp();
+        
+    }
+});
+$(".dn-input input[type=checkbox]").change(function(){
+    var checkbox = $(this);
+    if(checkbox.is(":checked")){
+        checkbox.closest(".dn-input").find("input[type=date]").slideDown();
+        console.log("che")
+    }
+    else{
+        console.log("no che")
+        checkbox.closest(".dn-input").find("input[type=date]").slideUp();
+        
+    }
+});
 //change li images on hover
 
 const liElements = document.querySelectorAll('.sideNav-list-items');

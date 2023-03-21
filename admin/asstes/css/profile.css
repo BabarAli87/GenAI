@@ -1889,6 +1889,13 @@
     display: block;
   }
   
+  @media (max-width: 992px) {
+    .image-upload
+    {
+      bottom: 280%;
+  
+    }
+  }
   @media (max-width: 768px) {
     .btn {
       margin-bottom: 10px;

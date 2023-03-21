@@ -72,7 +72,7 @@
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
                               </div>
                             <div class="">
-                                <a href="./user_dashboard.html"><img class="logo-imgMob" src="../user/asstes/images/Genlogo-removebg-preview.png"></a>
+                                <a href="./admin-dashboard.html"><img class="logo-imgMob" src="./asstes/images/Genlogo-removebg-preview.png"></a>
                             </div>
                             <div class="d-flex align-items-center userNav-dropdown">
                                 <div class="dropdown">
@@ -89,13 +89,13 @@
                         </div>
                     </div>
                     <div class="col-sm-10 mob-display">
-                        <div class="row justify-content-between align-items-center">
+                        <div class="row  align-items-center">
                            
                               
                               <div class="col-sm-3" id="main">
                                 <button class="openbtn" onclick="openNav()"><img src="./asstes/images/Group 133535.png"></button>  
                               </div>
-                            <div class="col-sm-5">
+                            <div class="col-sm-5 page-heading-wraper">
                                 <h4 class="page-heading">Subscription Management</h4>
                             </div>
                             <!-- <div class="col-sm-3">
@@ -281,8 +281,9 @@
 <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("mySidebar").style.backgroundColor = "#FFFFFF";
+      document.getElementById("mySidebar").style.backgroundColor = "rgb(255 255 255 / 97%)";
       document.getElementById("logo").style.justifyContent = "center";
+      document.getElementById("mySidebar").style.display = "block";
     //   document.getElementById("mySidebar").style.boxShadow = "0px 30px 60px rgba(0, 0, 0, 0.1);";
     //   document.getElementById("main").style.marginLeft = "250px";
     }
@@ -291,7 +292,8 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("mySidebar").style.backgroundColor = "transparent";
       document.getElementById("logo").style.justifyContent = "start";
-      document.getElementById("main").style.marginLeft= "0";
+      // document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("mySidebar").style.display = "none";
     }
 
 
@@ -303,6 +305,8 @@ function match() {
     minWidth769.matches ? classList.add('sidebar') : classList.remove('sidebar');
     if(minWidth769.matches){
         document.getElementById("mySidebar").style.boxShadow = "none";
+      document.getElementById("mySidebar").style.display = "none";
+
     }
 }
 
