@@ -842,7 +842,7 @@ div#example_length label select{
   max-width: 115px;
 }
 #confirmBtn {
-  background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
+  background-color: #393939;
   border: none;
   border-radius: 99px;
   padding: 6px 45px;
@@ -852,7 +852,7 @@ div#example_length label select{
 }
 
 #confirmBtn:hover {
-  background: linear-gradient(263.43deg, #B4885A 15.44%, #E7DB6F 52.09%, #B4885A 91.92%);
+  background-color: #393939;
   border: none;
   border-radius: 99px;
   padding: 6px 45px;
@@ -1018,7 +1018,6 @@ justify-content: space-between;
   appearance: none;
   width: 20px;
   height: 20px;
-  /* background: linear-gradient(265.03deg, #B4885A 17.13%, #E7DB6F 55.54%, #B4885A 97.84%) ; */
   cursor: pointer;
 			border-radius: 0;
       border-left: 10px solid transparent;
