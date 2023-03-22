@@ -502,6 +502,7 @@ ul.pagination {
 	}
 	.files input{
 		padding: 120px 0px 85px 3%;
+		outline-offset:-1px;
 	}
 }
 @media screen and (max-width: 767px) {
