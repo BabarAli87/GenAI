@@ -2,16 +2,19 @@ body{
     font-family: 'Jost', sans-serif;
 }
 .logo-imgMob{
-  margin-top: 12px;
-    width: 70px;
+  margin-top: 20px;
+  width: 75px;
+  margin-bottom: 20px;
 }
 .logo-img{
-  margin-top: 12px;
-    width: 70px;
+  margin-top: 20px;
+  width: 75px;
+  margin-bottom: 20px;
 }
 .logo-imgQuestino{
-  margin-top: 12px;
-    width: 70px;
+  margin-top: 20px;
+  width: 75px;
+  margin-bottom: 20px;
 }
 .logo-name{
     margin-left: -34px;
@@ -1105,15 +1108,16 @@ justify-content: space-between;
   .logo-img{
     margin-top: 0;
     margin-left: -23px;
+    margin-bottom: 0;
 }
   .logo-imgQuestino{
     margin-top: 0;
-
+    margin-bottom: 0;
     margin-left: -23px;
 }
 .logo-imgMob{
   margin-top: 0;
-
+  margin-bottom: 0;
   margin-left: -23px;
 }
 .visaCardImg{
@@ -1127,6 +1131,9 @@ justify-content: space-between;
   justify-content: start;
   margin-top: 15px;
 }
+.sideNav-list{
+  margin-top: 20px;
+  }
 }
 @media screen and (max-width:767px){
   .mob-display{
