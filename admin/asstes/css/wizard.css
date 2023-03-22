@@ -500,6 +500,9 @@ ul.pagination {
 	.actions ul li:first-child {
 		margin-left: 0;
 	}
+	.files input{
+		padding: 120px 0px 85px 3%;
+	}
 }
 @media screen and (max-width: 767px) {
 	.inner .form-row.form-row-date .form-holder select {

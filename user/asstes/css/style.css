@@ -1117,6 +1117,10 @@ justify-content: space-between;
 .visaCardImg{
   margin-top: 20px;
 }
+.dataTables_filter{
+  justify-content: start;
+  margin-top: 15px;
+}
 }
 @media screen and (max-width:767px){
   .mob-display{
