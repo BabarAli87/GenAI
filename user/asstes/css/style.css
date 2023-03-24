@@ -1128,6 +1128,23 @@ justify-content: space-between;
 .sideNav-list{
 margin-top: 20px;
 }
+.custom-search-input{
+  width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 67px 10px 10px;
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 13px;
+}
+.custom-search-botton{
+  padding: 0px 6px;
+  font-size: 13px;
+}
+.footer-txt{
+  font-size: 13px;
+}
 }
 @media screen and (max-width:767px){
   .mob-display{
